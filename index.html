@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is description" />
+    <meta name="keywords" content="html,html tutorials, web development" />
+    <meta name="robots" contents="INDEX,FOLLOW" />
+    <title>Avnish Gym</title>
+
+    <!--adding css here-->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        background: url("img/goodpink.jpg");
+      }
+      .left {
+        display: inline-block;
+        /*--border:2px solid aqua;*/
+        position: absolute;
+        left: 40px;
+        top: 14px;
+      }
+      .left img {
+        width: 50px;
+        padding-left: 23px;
+      }
+      .left div {
+        color: rgb(103, 9, 81);
+        text-align: center;
+        font-family: "Times New Roman", serif;
+      }
+      .mid {
+        display: block;
+        width: 50%;
+        margin: 29px auto;
+        /*border:2px solid aquamarine;*/
+      }
+      .right {
+        position: absolute;
+        right: 34px;
+        top: 12px;
+        display: inline-block;
+        /*border:2px solid brown;*/
+        top: 20px;
+      }
+      .nav {
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .nav li {
+        display: inline-block;
+        font-size: 17px;
+      }
+      .nav li a {
+        color: rgb(223, 18, 100);
+        text-decoration: none;
+        padding: 0px 20px;
+      }
+      .nav li a:hover {
+        color: rgb(223, 18, 100);
+        text-decoration: underline;
+        background-color: rgb(237, 223, 231);
+        padding: 10px 20px;
+        border-radius: 20px;
+      }
+      .nav li a:visited {
+        color: rgb(86, 97, 7);
+        text-decoration: underline;
+        background-color: rgb(237, 223, 231);
+        padding: 10px 20px;
+        border-radius: 20px;
+      }
+      .btn {
+        margin: 5px 9px;
+        background-color: rgb(235, 199, 214);
+        color: rgb(75, 6, 37);
+        padding: 4px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        cursor: pointer;
+      }
+      .container {
+        margin: 100px 80px;
+        padding: 20px 50px;
+        width: 35%;
+        border-radius: 10px;
+        background-color: rgb(230, 162, 202);
+      }
+      .container h1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(181, 112, 157);
+      }
+      .container button {
+        display: block;
+        width: 20%;
+        margin: 10px auto;
+      }
+      .form-group input {
+        text-align: center;
+        display: block;
+        width: 70%;
+        padding: 6px;
+        margin: 10px auto;
+        font-style: italic;
+        background-color: rgb(229, 193, 193);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      .im1 img {
+        position: absolute;
+        width: 40px;
+        left: 45%;
+        padding: 2px 5px;
+      }
+      .im2 img {
+        position: absolute;
+        width: 40px;
+        left: 50%;
+        padding: 2px 5px;
+      }
+      .foot {
+        border-top: 2px crimson;
+        background-color: rgb(208, 177, 200);
+        height: 50px;
+      }
+    </style>
+    <!--js file adding here-->
+    <script src="javascript.js"></script>
+  </head>
+  <body>
+    <!--<h3>Table </h3>
+    /*<table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Avnish</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Raj</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Ids and tutorials</h3>-->
+    <header class="header">
+      <div class="left">
+        <img src="img/logo.png" alt="Error" />
+        <div>Avnish Fitness</div>
+      </div>
+      <div class="mid">
+        <ul class="nav">
+          <li><a href="index.html" target="_blank" class="active">Home</a></li>
+          <li><a href="about.html" target="_blank">About Us</a></li>
+          <li><a href="cal.html" target="_blank">Fitness Calculator</a></li>
+          <li><a href="conc.html" target="_blank">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </header>
+
+    <div class="container">
+      <h1>Join the best Gym of Gaya</h1>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter Your name" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter Address" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter Phone no" />
+        </div>
+        <div class="form-group">
+          <input type="number" name="" placeholder="Enter your Age" />
+        </div>
+        <button class="btn">Submit</button>
+        <button class="btn">Reset</button>
+      </form>
+    </div>
+    <footer class="footer">
+      <div class="foot">
+        <div class="im1">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="img/instaicon.jpg" alt="Instagarm"
+          /></a>
+        </div>
+        <div class="im2">
+          <a
+            href="http://www.Linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="img/linicon.jpg" alt="Linkedin"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
